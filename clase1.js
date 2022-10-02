@@ -44,3 +44,46 @@ console.log(numero)
 //Booleano:
 let booleano = true // o false
 console.log(booleano)
+
+//OPERACIONES BÁSICAS + - * / 
+let num1 = 8
+let num2 = 5
+const num3 = 2
+//suma
+let suma1 = 6 + 7
+console.log(suma1)
+let suma2 = num1 + num2
+console.log(suma2)
+let suma3 = suma1 + num3
+console.log(suma3)
+//resta
+let resta1 = num1 - num3
+console.log(resta1)
+//Multiplicar
+let mul1 = num1 * num3
+console.log(mul1)
+//Dividir
+let div1 = num1 / num2
+console.log(div1)
+
+//CONCATENACIÓN / símbolo + concatena string sin espacios
+let cadena1 = "Coder"
+let cadena2 = "House"
+console.log(cadena1+"   "+cadena2)
+console.log(num1+cadena1)
+//devuelve NaN=Not a Number / cuando se hace op con números y strings
+console.log(num1-cadena1)
+
+//Alert -- Cartel Emergente de Salida
+//alert("El Valor de la suma es: " + suma1)
+
+//prompt -- cartel emergente de entrada
+//guarda sus datos default como string
+let numero1 = prompt("Ingrese el Primer número")
+let numero2 = prompt("Ingrese el segundo número")
+
+/*Usuario ingrese dos numero, por separado y esos dos números 
+se sumen en una tercer variable mediante un cartel emergente la suma*/
+let resultadoSuma = numero1 + numero2
+console.log(resultadoSuma)
+alert("El resultado de la suma es: "+resultadoSuma)
