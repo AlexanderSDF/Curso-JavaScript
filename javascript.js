@@ -2,7 +2,8 @@
 console.log("Bienvenidos a la primera clase de JavaScript") 
 
 //Formas de guardar espacios en memoria
-//var y let son dos formas de declarar variables
+//var y let son dos formas de declarar variables = se puede reasignar valor
+
 //Declarar y asignar valor, se llama "Inicializar"
 
 //PRIMERA FORMA "VAR" - Mala Practica
@@ -24,5 +25,22 @@ console.log(editorial)
 let editorial2 = "Editorial Pinguli"
 console.log(editorial2)
 
-//TERCERA FORMA "CONST" - Buena Practica
-const cantidadPaginas
+//TERCERA FORMA "CONST" - De Constante = no se puede reasignar valor
+//A diferencia de las variables no se pueden solo declarar.
+//Se debe declarar y asignar = inicializar
+const cantidadPaginas = 100
+const PI = 3.14
+console.log(cantidadPaginas)
+console.log(PI) 
+
+//TIPOS DE DATOS
+//Lenguaje de tipado débil: no hay que aclarar el tipo de dato.
+//String:
+let cadenaTexto = "hola, como estas?"
+console.log(cadenaTexto)
+//Number:
+let numero = 5
+console.log(numero)
+//Booleano:
+let booleano = true // o false
+console.log(booleano)
