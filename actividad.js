@@ -4,24 +4,29 @@ alert("Usuario, para realizar una operación se le solicitara dos números y un 
 let numero1 = parseInt(prompt("Indique el Número 1"));
 let operador = prompt("Indique la Operación: ");
 let numero2 = parseInt(prompt("Indique el Número 2"));
+let mensajeResultado = "El resultado de la operación es: "
+
 function operaciones(numero1, numero2, operador) {
   if (operador == "+") {
-    alert(numero1 + numero2);
+    alert(mensajeResultado+(numero1 + numero2));
   }
   if (operador == "-") {
-    alert(numero1 - numero2);
+    alert(mensajeResultado+(numero1 - numero2));
   }
   if (operador == "*") {
-    alert(numero1 * numero2);
+    alert(mensajeResultado+(numero1 * numero2));
   }
   if (operador == "/") {
-    alert(numero1 / numero2);
+    alert(mensajeResultado+(numero1 / numero2));
   }
   if (operador == "%") {
-    alert(numero1 * (numero2 / 100));
+    alert(mensajeResultado+(numero1 * (numero2 / 100)));
+  }
+  if (operador == "%%") {
+    alert(mensajeResultado+((numero2 * 100)/numero1)+"%");
   }
 }
-operaciones(numero1, numero2, operador);//termina el function
+operaciones(numero1, numero2, operador);//termina operación
 /*
 //----------------------------------------------------------------------------------------------
 
