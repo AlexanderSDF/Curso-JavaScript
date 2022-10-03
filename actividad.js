@@ -23,7 +23,7 @@ function operaciones(numero1, numero2, operador) {
     alert(mensajeResultado+(numero1 * (numero2 / 100)));
   }
   if (operador == "%%") {
-    alert(mensajeResultado+((numero2 * 100)/numero1)+"%");
+    alert(mensajeResultado+((numero2 * 100)/numero1)+" %");
   }
 }
 operaciones(numero1, numero2, operador);//termina operación

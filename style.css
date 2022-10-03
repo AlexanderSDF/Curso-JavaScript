@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  text-decoration: underline;
+  margin: 15px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin:50px 20px;
+  text-align: center;
+}
