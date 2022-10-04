@@ -5,7 +5,7 @@
 //!Si el promedio es mayor a 7 " promociono la materia"
 //!Si el promedio es mayor o igual a 4 "aprobara materia"
 //!menor a 4 "desaprobó la materia"
-9
+
 let alumno = (prompt("Indique su nombre: "));
 let nota1 = parseInt(prompt("Indique la nota del 1er parcial: "));
 let nota2 = parseInt(prompt("Indique la nota del 2do parcial: "));
