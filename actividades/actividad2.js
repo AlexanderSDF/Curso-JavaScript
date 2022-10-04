@@ -5,7 +5,7 @@
 //!Si el promedio es mayor a 7 " promociono la materia"
 //!Si el promedio es mayor o igual a 4 "aprobara materia"
 //!menor a 4 "desaprobó la materia"
-/*  
+9
 let alumno = (prompt("Indique su nombre: "));
 let nota1 = parseInt(prompt("Indique la nota del 1er parcial: "));
 let nota2 = parseInt(prompt("Indique la nota del 2do parcial: "));
@@ -21,7 +21,7 @@ else if(promedioNota>4) {
 else {
   alert(alumno + " su promedio general de calificaciones es "  + promedioNota +"."+" Usted desaprobó la materia, deberá cursar el Final tipo 'B' del modulo 1, 2, 3, 4, 5 y 6 la Fecha 15/11/22.");
 }
-*/
+
 //!TAREA 2--------------------------------------------------------------------
 //!Usuario ingresa color  favorito y se le devuelve si es un color Primario, Secundario o Terciario
 
