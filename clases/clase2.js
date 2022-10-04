@@ -71,7 +71,7 @@ if(mayor5){
     console.log("El numero no es mayor a cinco")
 }
 
-let color = prompt("Ingrese su color favorito")
+//todo let color = prompt("Ingrese su color favorito")
 //Todo lo de colores primarios en una sola condición -- OPERADORES LÓGICOS
 
 if((color == "rojo") || (color== "azul") || (color =="amarillo")){
