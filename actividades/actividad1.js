@@ -1,5 +1,8 @@
 //!TAREA 1 CALCULADORA DE OPERACIONES BÁSICAS
 //!Operaciones / Suma-Resta-Multiplicación-Division-Porcentaje
+
+
+
 alert("Usuario, para realizar una operación se le solicitara dos números y un operador ");
 let numero1 = parseInt(prompt("Indique el Número 1"));
 let operador = prompt("Indique la Operación: ");
@@ -28,8 +31,15 @@ function operaciones(numero1, numero2, operador) {
 }
 operaciones(numero1, numero2, operador);//termina operación
 
+
+
+
 //!TAREA 2-----------------------------------------------------------------------------------------
 //!Jugador con cantidad de partidos, goles y Promedio de goles por partido
+
+
+
+
 let jugador = (prompt("Indique el jugador: "));
 let partidos = parseInt(prompt("Indique el cantidad de partidos: "));
 let goles = parseInt(prompt("Indique el cantidad de goles del jugador: "));
@@ -47,7 +57,10 @@ if(promedio<0.5){
 
 
 //!TAREA 3--------------------------------------------------------------------------------------------
-//!Ingresar 3 notas sacar un promedio
+//!Ingresar 3 notas sacar un promedio 
+
+
+
 let alumno = (prompt("Indique su nombre: "));
 let nota1 = parseInt(prompt("Indique la nota del 1er parcial: "));
 let nota2 = parseInt(prompt("Indique la nota del 2do parcial: "));

@@ -1,4 +1,4 @@
- 
+
 //!Ejercicio clase 2:
 
 //!Usuario ingresa tres notas del 1 al 10 y sacamos el total y el promedio de esas notas
