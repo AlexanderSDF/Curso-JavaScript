@@ -57,6 +57,8 @@ for(let i = 0; i <=10; i++ ){
     console.log(`${numTabla} x ${i} = ${numTabla*i}`)
 }
 
+
+
 //!CICLO WHILE : MIENTRAS
 //!while(condición a evaluar)
 //!condición sea TRUE se ejecuta el ciclo // cuando sea false deja de ejecutarse
@@ -65,6 +67,7 @@ while(booleano == true){
     //puede ejecutar cero veces
     console.log("Se ejecuta el ciclo")
 }
+//!opcion1
 let pregunta = prompt("Desea ingresar una nota")
 while(pregunta != "no"){
     let notaIngresada = parseInt(prompt("Ingrese una nota"))
@@ -75,6 +78,7 @@ while(pregunta != "no"){
         console.log("Gracias por utilizar nuestro algoritmo. Saludos :D")
     }
 }
+//!opcion2
 let bandera = true
 let pregunta2 = prompt("Desea ingresar una nota")
 while(bandera){
@@ -87,6 +91,7 @@ while(bandera){
         bandera =false
     }
 }
+
 
 //!DO WHILE: Ingresa al menos una vez
 let condición = true
@@ -101,6 +106,7 @@ do{
         console.log("Respuesta incorrecta, vuelta intentar")
     }
 }while(condición)
+
 
 //!SWITCH: ES UN CONDICIONAL MÁS PUNTUAL
 let opción = prompt(`Ingrese su opción deseada: 
