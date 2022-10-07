@@ -110,9 +110,9 @@ do{
 //     }else if(promedio > 7){
 //         console.log(`${nombre}: Promociono la materia.  Su promedio es ${promedio.toFixed(2)} `)
 //     }else if(promedio >= 4){
-//         console.log(`${nombre}: Aprobo la materia.  Su promedio es ${promedio.toFixed(2)} `)
+//         console.log(`${nombre}: Aprobó la materia.  Su promedio es ${promedio.toFixed(2)} `)
 //     }else{
-//         console.log(`${nombre}: Desaprobo la materia.  Su promedio es ${promedio.toFixed(2)} `)
+//         console.log(`${nombre}: Desaprobó la materia.  Su promedio es ${promedio.toFixed(2)} `)
 //     }
 //     let pregunta = prompt(`Desea ingresar las notas de otro/a alumno/a?
 //     "ESC" para no`)
