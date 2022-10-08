@@ -76,13 +76,13 @@ do{
 
     let promedio = total / notasIngresar
     if(promedio == 10){
-        console.log(`${nombre}: Felicitaciones es un alumno/a ejemplar. Su promedio es ${promedio.toFixed(2)} `)
+        console.log(`${nombre}: Felicitaciones es un alumno/a ejemplar. Su promedio es ${promedio.toFixed(2)}`)
     }else if(promedio > 7){
         console.log(`${nombre}: Promociono la materia.  Su promedio es ${promedio.toFixed(2)} `)
     }else if(promedio >= 4){
-        console.log(`${nombre}: Aprobo la materia.  Su promedio es ${promedio.toFixed(2)} `)
+        console.log(`${nombre}: Aprobó la materia.  Su promedio es ${promedio.toFixed(2)} `)
     }else{
-        console.log(`${nombre}: Desaprobo la materia.  Su promedio es ${promedio.toFixed(2)} `)
+        console.log(`${nombre}: Desaprobó la materia.  Su promedio es ${promedio.toFixed(2)} `)
     }
     let pregunta = prompt(`Desea ingresar las notas de otro/a alumno/a?
     "ESC" para no`)
@@ -91,7 +91,7 @@ do{
         alert("Gracias por utilizar nuestro código!! ")
     }
 }while(bandera)
-//Condicional que evalue el promedio
+//Condicional que evalúe el promedio
 //Lo del ciclo - que ingrese otro alumno
 
 
