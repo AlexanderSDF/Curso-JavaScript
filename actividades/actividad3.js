@@ -101,27 +101,26 @@ do {
 
 // let bandera = true
 // do{
-//     //Los ingresos
-//     let nombre = prompt("Ingrese el nombre de la persona")
-//     let nota1 = parseFloat(prompt("Ingrese la primer nota"))
-//     let nota2 = parseFloat(prompt("Ingrese la segunda nota"))
-//     let nota3 = parseFloat(prompt("Ingrese la tercer nota"))
-
-//     let total = nota1+ nota2 + nota3
-//     let promedio = total / 3
-//     if(promedio == 10){
-//         console.log(`${nombre}: Felicitaciones es un alumno/a ejemplar. Su promedio es ${promedio.toFixed(2)} `)
-//     }else if(promedio > 7){
-//         console.log(`${nombre}: Promociono la materia.  Su promedio es ${promedio.toFixed(2)} `)
-//     }else if(promedio >= 4){
-//         console.log(`${nombre}: Aprobó la materia.  Su promedio es ${promedio.toFixed(2)} `)
-//     }else{
-//         console.log(`${nombre}: Desaprobó la materia.  Su promedio es ${promedio.toFixed(2)} `)
-//     }
-//     let pregunta = prompt(`Desea ingresar las notas de otro/a alumno/a?
-//     "ESC" para no`)
-//     if(pregunta.toUpperCase() == "ESC"){
-//         bandera = false
-//         alert("Gracias por utilizar nuestro código!! ")
-//     }
+//   //Los ingresos
+//   let nombre = prompt("Ingrese el nombre de la persona")
+//   let nota1 = parseFloat(prompt("Ingrese la primer nota"))
+//   let nota2 = parseFloat(prompt("Ingrese la segunda nota"))
+//   let nota3 = parseFloat(prompt("Ingrese la tercer nota"))
+//   let total = nota1+ nota2 + nota3
+//   let promedio = total / 3
+//   if(promedio == 10){
+//     console.log(`${nombre}: Felicitaciones es un alumno/a ejemplar. Su promedio es ${promedio.toFixed(2)} `)
+//   }else if(promedio > 7){
+//     console.log(`${nombre}: Promociono la materia.  Su promedio es ${promedio.toFixed(2)} `)
+//   }else if(promedio >= 4){
+//     console.log(`${nombre}: Aprobó la materia.  Su promedio es ${promedio.toFixed(2)} `)
+//   }else{
+//     console.log(`${nombre}: Desaprobó la materia.  Su promedio es ${promedio.toFixed(2)} `)
+//   }
+//   let pregunta = prompt(`Desea ingresar las notas de otro/a alumno/a?
+//   "ESC" para no`)
+//   if(pregunta.toUpperCase() == "ESC"){
+//     bandera = false
+//     alert("Gracias por utilizar nuestro código!! ")
+//   }
 // }while(bandera)
