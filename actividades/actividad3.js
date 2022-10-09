@@ -49,15 +49,27 @@
 // for(i = 1; i <=10; i++){
 //   console.log(`${numTabla} x ${i} = ${i*numTabla}`)
 // }
-//!WHILE = CICLO CON CONDICIONES
-// let pregunta = prompt('Quieres ingresar notas?')
-// while(pregunta.toLowerCase() != "no"){
-//   let nombre = prompt('Ingrese el nombre del alumno')
-//   let notaIngresada = parseFloat(prompt('Ingrese la nota 1'))
-//   console.log(`La nota ingresada es: ${notaIngresada}`)
-//   alert(`La nota ingresada es: ${notaIngresada}`)
-//   let pregunta = prompt('Desea seguir cargando notas?')
-//   if(pregunta.toLowerCase() == "no"){
-//     alert('Gracias por usar el algoritmo')
-//   }
-// }
+//!WHILE(MIENTRAS) = CICLO SE CORTA CUANDO CUMPLE LA CONDICIÓN
+//let pregunta = prompt('Quieres ingresar notas?')
+//while(pregunta.toLowerCase() != "no"){
+//  let nombre = prompt('Ingrese el nombre del alumno')
+//  let notaIngresada = parseFloat(prompt('Ingrese la nota 1'))
+//  console.log(`La nota ingresada es: ${notaIngresada}`)
+//  alert(`La nota ingresada es: ${notaIngresada}`)
+//  let pregunta = prompt('Desea seguir cargando notas?')
+//  if(pregunta.toLowerCase() == "no"){
+//    alert('Gracias por usar el algoritmo')
+//  }
+//}
+//*lo mismo pero con un booleano que corta el ciclo
+//let bandera = true
+//while(bandera){
+//  notaIngresada = parseInt(prompt("Ingrese una nota:"))
+//  console.log(`La nota que usted ingreso es ${notaIngresada}.`)
+//  pregunta = prompt("Desea seguir ingresando notas?")
+//  if(pregunta != "si"){
+//    alert("Gracias por usar nuestro algoritmo")
+//    bandera = false
+//  }
+//}
+//!DO WHILE(HAZLO MIENTRAS) = SE CORTA CUANDO NO CUMPLE LA CONDICIÓN
