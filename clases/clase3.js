@@ -67,6 +67,7 @@ while(booleano == true){
     //puede ejecutar cero veces
     console.log("Se ejecuta el ciclo")
 }
+
 //!opcion1
 let pregunta = prompt("Desea ingresar una nota")
 while(pregunta != "no"){
@@ -78,6 +79,8 @@ while(pregunta != "no"){
         console.log("Gracias por utilizar nuestro algoritmo. Saludos :D")
     }
 }
+
+
 //!opcion2
 let bandera = true
 let pregunta2 = prompt("Desea ingresar una nota")

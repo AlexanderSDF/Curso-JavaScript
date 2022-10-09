@@ -1,5 +1,4 @@
-
-//!Ejercicio clase 2:
+//!Ejercicio clase 2:-----------------------------------------------------------
 
 //!Usuario ingresa tres notas del 1 al 10 y sacamos el total y el promedio de esas notas
 //!Hacer un condicional que me diga si el promedio es 10 "felicitaciones es un alumno/a ejemplar"
@@ -54,3 +53,4 @@ if (promedioGol>=0.5) {
 else{
   alert("Flojo el muchacho derecho al Paddle")
 }
+//!PRACTICA--------------------------------------------------------------------------
