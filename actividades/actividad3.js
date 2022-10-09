@@ -50,20 +50,14 @@
 //   console.log(`${numTabla} x ${i} = ${i*numTabla}`)
 // }
 //!WHILE = CICLO CON CONDICIONES
-let pregunta = prompt('Quieres ingresar notas?')
-
-while(pregunta.toLowerCase != "no"){
-  let nombre = prompt('Ingrese el nombre del alumno')
-  let notaIngresada1 = parseFloat(prompt('Ingrese la nota 1'))
-  let notaIngresada2 = parseFloat(prompt('Ingrese la nota 2'))
-  let notaIngresada3 = parseFloat(prompt('Ingrese la nota 3'))
-  let promedio = (notaIngresada1+ notaIngresada2+notaIngresada3) /3 
-  console.log(`El promedio de ${nombre} es ${promedio}`)
-  alert(`El promedio de ${nombre} es ${promedio}`)
-
-  let pregunta = prompt('Desea seguir cargando notas?')
-  
-  if(pregunta.toLowerCase == "no"){
-    alert('Gracias por usar el algoritmo')
-  }
-}
+// let pregunta = prompt('Quieres ingresar notas?')
+// while(pregunta.toLowerCase() != "no"){
+//   let nombre = prompt('Ingrese el nombre del alumno')
+//   let notaIngresada = parseFloat(prompt('Ingrese la nota 1'))
+//   console.log(`La nota ingresada es: ${notaIngresada}`)
+//   alert(`La nota ingresada es: ${notaIngresada}`)
+//   let pregunta = prompt('Desea seguir cargando notas?')
+//   if(pregunta.toLowerCase() == "no"){
+//     alert('Gracias por usar el algoritmo')
+//   }
+// }
