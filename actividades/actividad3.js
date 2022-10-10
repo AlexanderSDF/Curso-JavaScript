@@ -72,5 +72,36 @@
 //   bandera = false;
 //   }
 //}
-//!DO WHILE(HAZLO MIENTRAS) = SE CORTA CUANDO NO CUMPLE LA CONDICIÓN
 
+let admin = "alex";
+let password = "41231";
+let bandera = true;
+
+while (bandera) {
+    let userId = prompt("Ingrese nombre de usuario");
+    if (userId.toLowerCase() != admin) {
+    while (userId.toLowerCase() != admin) {
+        alert("El usuario es incorrecto, intente nuevamente.");
+        userId = prompt("Ingrese nombre de usuario");
+    }
+    } else {
+    alert(`Bienvenido ${userId}`);
+    }
+
+    let intentos = 3;
+    let userPw = prompt("Ingrese la contraseña");
+
+    if (userPw != password) {
+    while ((intentos >= 1) & (userPw != password)) {
+        intentos = intentos - 1;
+        alert("Contraseña incorrecta.");
+        alert(`Intentos restantes: ${intentos + 1}`);
+        userPw = prompt("Ingrese la contraseña");
+    }
+    alert("Capo no se quien sos, raja de aca");
+} 
+else {
+    alert(`Bienvenido al sistema ${admin}`);
+    bandera = false;
+    }
+}
