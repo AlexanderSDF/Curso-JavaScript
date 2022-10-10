@@ -104,4 +104,3 @@
 // 		bandera = false;
 // 	}
 // }
-console.log("Hola mundo");
