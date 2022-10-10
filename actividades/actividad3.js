@@ -39,13 +39,13 @@
 //!PRACTICA EJERCICIOS -----------------------------------------------------------------------------------------------
 //!FOR = CICLO CON CONTEO
 // let numTabla = parseInt(prompt('Dime el numero que quieras obtener la tabla'));
-// 
+//
 // for(let i = 0; i <=10; i++ ){
 //   console.log(numTabla + ' x ' + i + ' = ' + numTabla*i)
 // }
 // // * Tabla con for pero aplicando backticks
 // let numTabla = parseInt(prompt('La tabla:'));
-// 
+//
 // for(i = 1; i <=10; i++){
 //   console.log(`${numTabla} x ${i} = ${i*numTabla}`)
 // }
@@ -62,14 +62,15 @@
 //  }
 //}
 //*lo mismo pero con un booleano que corta el ciclo
-//let bandera = true
-//while(bandera){
-//  notaIngresada = parseInt(prompt("Ingrese una nota:"))
-//  console.log(`La nota que usted ingreso es ${notaIngresada}.`)
-//  pregunta = prompt("Desea seguir ingresando notas?")
-//  if(pregunta != "si"){
-//    alert("Gracias por usar nuestro algoritmo")
-//    bandera = false
-//  }
+//let bandera = true;
+//while (bandera) {
+//   notaIngresada =  parseInt(prompt("Ingrese una nota:"));
+//   console.log(`La nota que usted ingreso es ${notaIngresada}.`);
+//   pregunta = prompt("Desea seguir ingresando notas?");
+//   if (pregunta != "si") {
+//   alert("Gracias por usar nuestro algoritmo");
+//   bandera = false;
+//   }
 //}
 //!DO WHILE(HAZLO MIENTRAS) = SE CORTA CUANDO NO CUMPLE LA CONDICIÓN
+
