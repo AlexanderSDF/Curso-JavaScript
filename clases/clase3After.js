@@ -13,14 +13,14 @@
 // console.log(10)
 // console.log(11)
 
-//sugar syntax i+ identico a decirle i = i +1
+//sugar syntax i+ idéntico a decirle i = i +1
 //sugar syntax para sumar index += 2
 //CICLO FOR
 //Ciclo for tiene tres partes fundamentales
 // (desde; hasta; actualización)
 // for(let index = 0; index < 12; index = index + 1){
 //     //Primero declara index y asigna un valor, hasta y luego indica como se actualiza
-    
+
 //     //PRIMER VUELTA index = 0 -> IMPRIME
 //     //SEGUNDA VUELTA index = 1 -> IMPRIME
 //     //TERCER VUELTA index = 2 ->
@@ -57,8 +57,8 @@
 // }
 
 //CICLO WHILE : MIENTRAS
-//while(condicion a evaluar)
-//condicion sea TRUE se ejecuta el ciclo // cuando sea false deja de ejecutarse
+//while(condición a evaluar)
+//condición sea TRUE se ejecuta el ciclo // cuando sea false deja de ejecutarse
 // let booleano = false
 // while(booleano == true){
 //     //puede ejecutar cero veces
@@ -136,8 +136,8 @@
 //Usuario ingresa tres notas del 1 al 10 y sacamos el total y el promedio de esas notas
 //Hacer un condicional que me diga si el promedio es 10 "felicitaciones es un alumno/a ejemplar"
 //Si el promedio es mayor a 7 " promociono la materia"
-//Si el promedio es mayor o igual a 4 " aprobola materia"
-//menor a 4 "desaprobo la materia"
+//Si el promedio es mayor o igual a 4 " aprobó la materia"
+//menor a 4 "desaprobó la materia"
 //Agregarle un ciclo que me pregunte si deseo seguir ingresando notas
 
 //Idea while: 
@@ -182,9 +182,9 @@ do{
     }else if(promedio > 7){
         console.log(`${nombre}: Promociono la materia.  Su promedio es ${promedio.toFixed(2)} `)
     }else if(promedio >= 4){
-        console.log(`${nombre}: Aprobo la materia.  Su promedio es ${promedio.toFixed(2)} `)
+        console.log(`${nombre}: Aprobó la materia.  Su promedio es ${promedio.toFixed(2)} `)
     }else{
-        console.log(`${nombre}: Desaprobo la materia.  Su promedio es ${promedio.toFixed(2)} `)
+        console.log(`${nombre}: Desaprobó la materia.  Su promedio es ${promedio.toFixed(2)} `)
     }
     let pregunta = prompt(`Desea ingresar las notas de otro/a alumno/a?
     "ESC" para no`)
@@ -212,9 +212,9 @@ do{
 //     }else if(promedio > 7){
 //         console.log(`${nombre}: Promociono la materia.  Su promedio es ${promedio.toFixed(2)} `)
 //     }else if(promedio >= 4){
-//         console.log(`${nombre}: Aprobo la materia.  Su promedio es ${promedio.toFixed(2)} `)
+//         console.log(`${nombre}: Aprobó la materia.  Su promedio es ${promedio.toFixed(2)} `)
 //     }else{
-//         console.log(`${nombre}: Desaprobo la materia.  Su promedio es ${promedio.toFixed(2)} `)
+//         console.log(`${nombre}: Desaprobó la materia.  Su promedio es ${promedio.toFixed(2)} `)
 //     }
 //     let pregunta = prompt(`Desea ingresar las notas de otro/a alumno/a?
 //     "ESC" para no`)

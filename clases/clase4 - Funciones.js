@@ -40,24 +40,24 @@ function suma(num1, num2){
     return resul
     
 }
-// let resultado = suma(7,6)
-// console.log(resultado)
-// let resultado2 = suma(9,9)
-// console.log(resultado2)
-// function resta(num1, num2){
-//     console.log(`La resta es ${num1-num2}`)
-// }
-// //Orden de los parámetros es fundamental
-// resta(6,7)
-// resta(1,9)
-//Para que se ejecute una function debemos LLAMARLA/INVOCARLA
-//Estoy invocando la function pedirNombre
-// pedirNombre()
-// pedirNombre()
+//* let resultado = suma(7,6)
+//* console.log(resultado)
+//* let resultado2 = suma(9,9)
+//* console.log(resultado2)
+//* function resta(num1, num2){
+//*     console.log(`La resta es ${num1-num2}`)
+//* }
+//* //Orden de los parámetros es fundamental
+//* resta(6,7)
+//* resta(1,9)
+//* Para que se ejecute una function debemos LLAMARLA/INVOCARLA
+//* Estoy invocando la function pedirNombre
+//* pedirNombre()
+//* pedirNombre()
 function pedirDatos(){
     let numero1 = parseInt(prompt("Ingrese el primer Numero"))
     let numero2 = parseInt(prompt("Ingrese el segundo Numero"))
-    let operador = prompt("INgrese el operador deseado")
+    let operador = prompt("Ingrese el operador deseado")
     let resultado = calculadora(numero1, numero2, operador)
     console.log(resultado)
 }
@@ -77,7 +77,6 @@ function calculadora(primerNumero, segundoNumero, operacion) {
             
         default:
             return 0;
-           
     }
 }
 // let calculo = calculadora(5,3, "*")
@@ -88,7 +87,7 @@ function calculadora(primerNumero, segundoNumero, operacion) {
 
 // pedirDatos()
 
-//RETOMAMOS EJERCICIO CLASE 3:
+//!RETOMAMOS EJERCICIO CLASE 3:
 
 function pedirUsuario(){
     let usuario = prompt("Ingrese el nombre de la persona")
@@ -143,9 +142,9 @@ do{
     }else if(promedio > 7){
         console.log(`${nombre}: Promociono la materia.  Su promedio es ${promedio.toFixed(2)} `)
     }else if(promedio >= 4){
-        console.log(`${nombre}: Aprobo la materia.  Su promedio es ${promedio.toFixed(2)} `)
+        console.log(`${nombre}: Aprobó la materia.  Su promedio es ${promedio.toFixed(2)} `)
     }else{
-        console.log(`${nombre}: Desaprobo la materia.  Su promedio es ${promedio.toFixed(2)} `)
+        console.log(`${nombre}: Desaprobó la materia.  Su promedio es ${promedio.toFixed(2)} `)
     }
     let pregunta = prompt(`Desea ingresar las notas de otro/a alumno/a?
     "ESC" para no`)
