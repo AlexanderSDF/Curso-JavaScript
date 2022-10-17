@@ -35,7 +35,18 @@
 	"editor.tabSize": 2,
 	"editor.stickyScroll.enabled": true,
 	"editor.stickyScroll.maxLineCount": 10,
-	"cSpell.userWords": ["disp", "Disp", "Kamui"],
+	"cSpell.userWords": [
+		"disp",
+		"Disp",
+		"escuderia",
+		"Gonza",
+		"Julieta",
+		"Kamui",
+		"Leclerc",
+		"monoplazas",
+		"Sainz",
+		"Verstappen"
+	],
 	"workbench.iconTheme": "material-icon-theme",
 	"explorer.confirmDelete": false,
 	"workbench.productIconTheme": "fluent-icons",
@@ -54,5 +65,10 @@
 		"rgba(63, 55, 201,0.1)",
 		"rgba(63, 55, 201,0.05)",
 		"rgba(63, 55, 201,0.025)"
-	]
+	],
+	"git.enableSmartCommit": true,
+	"sync.gist": "95ffa01bfa97925ef1f1e1f2dc607c99",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"cSpell.language": "en,es-ES",
+	"explorer.confirmDragAndDrop": false
 }
