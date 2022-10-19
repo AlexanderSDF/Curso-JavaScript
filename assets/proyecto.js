@@ -113,6 +113,14 @@ Ingrese fin para finalizar la compra.`
 	}
 }
 //!Usuario Ingresa cantidad a comprar
+function calcularTotal(){
+	cantidadNotebooks = parseInt(
+	prompt(`Ingrese la cantidad de notebooks que desea comprar.`)
+	);
+  console.log(cantidadNotebooks);
+	console.log(notebookElegida.stock);
+	//!caga
+}
 //!Se agrega al carrito la cantidad Seleccionada siempre que exista en Stock
 let agregarACarrito = addShop(notebookElegida);
 
