@@ -1,6 +1,6 @@
 //!Repaso de clase 5 Objeto 
 // 
-//!Declaración de un Objeto literal
+//!PRIMERA FORMA: Declaración de un Objeto literal
 // 
 // const escuderia1 = {
   // marca: "Mercedes",
@@ -33,7 +33,7 @@
 // console.log(escuderia1);//*llamando el objeto
 // console.log(escuderia2.colores);//*llamando la propiedad colores
 
-//! Segunda forma Constructora = se usa un constructor/molde para los objetos
+//! SEGUNDA FORMA: Constructora = se usa un constructor/molde para los objetos
 //*Primera letra con Mayúsculas para diferenciar de otra herramienta
 
 let carreras = 18;
@@ -60,3 +60,20 @@ console.log(Mercedes);
 //*Utilización de un método para un Objeto
 Mercedes.presentar();
 Ferrari.presentar();
+
+//!Ejemplo del tutor
+//class Escuderia1 {
+//  constructor(
+//    marca,
+//    velPunta,
+//    { pilotos: piloto1, piloto2, piloto3 },
+//    { colores: color1, color2, color3 }
+//  ) {
+//    return {
+      marca: marca,
+      velPunta: velPunta,
+      pilotos: { piloto1, piloto2, piloto3 },
+      colores: { color1, color2, color3 },
+//    };
+//  }
+//}
