@@ -52,9 +52,32 @@ const producto4 = new Notebook(
 	230000,
 	3
 );
-const producto5 = new Notebook(5, `Notebook 14'`, `Gamer`, `Asus`, `Negro`, 280000, 8);
-const producto6 = new Notebook(6, `Notebook 14'`, `Gamer`, `Alienware`, `Blanco`, 300000, 2);
-const notebooksDisponibles = [producto1, producto2, producto3, producto4, producto5, producto6];
+const producto5 = new Notebook(
+	5, 
+	`Notebook 14'`, 
+	`Gamer`, 
+	`Asus`, 
+	`Negro`, 
+	280000, 
+	8
+);
+const producto6 = new Notebook(
+	6, 
+	`Notebook 14'`, 
+	`Gamer`, 
+	`Alienware`, 
+	`Blanco`, 
+	300000, 
+	2
+);
+const notebooksDisponibles = [
+	producto1, 
+	producto2, 
+	producto3, 
+	producto4, 
+	producto5, 
+	producto6
+];
 //!Ciclo de agregar A Carrito
 cicloEleccionNotebook();
 
@@ -72,10 +95,12 @@ function cicloEleccionNotebook() {
 
 Ingrese fin para finalizar la compra.`
 		);
-		notebookElegida = notebookDisponibles.find((notebook) => notebook.id == eleccionNotebook);
+		notebookElegida = notebooksDisponibles.find(
+      (notebook) => notebook.id == eleccionNotebook
+		)
 		console.log(notebookElegida);
 		//Verifica que el articulo sea valido
-		const verificacionArticulos = notebookDisponibles.some(
+		const verificacionArticulos = notebooksDisponibles.some(
 			(notebook) => notebook.id == eleccionNotebook
 		);
     if (verificacionArticulos == true) {
@@ -84,7 +109,7 @@ Ingrese fin para finalizar la compra.`
       alert(`Ingresó un artículo incorrecto.`)
       break;
     }
-    let cantidadNotebooksCarrito = calcularTotal();
+    let cantidadNotebookCarrito = calcularTotal();
 	}
 }
 //!Usuario Ingresa cantidad a comprar
