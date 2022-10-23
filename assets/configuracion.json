@@ -36,6 +36,8 @@
 	"editor.stickyScroll.enabled": true,
 	"editor.stickyScroll.maxLineCount": 10,
 	"cSpell.userWords": [
+		"Alienware",
+		"Asus",
 		"disp",
 		"Disp",
 		"escuderia",
@@ -43,8 +45,10 @@
 		"Julieta",
 		"Kamui",
 		"Leclerc",
+		"Macbook",
 		"monoplazas",
 		"Sainz",
+		"Thinkpad",
 		"Verstappen"
 	],
 	"workbench.iconTheme": "material-icon-theme",
@@ -70,5 +74,7 @@
 	"sync.gist": "95ffa01bfa97925ef1f1e1f2dc607c99",
 	"liveServer.settings.donotShowInfoMsg": true,
 	"cSpell.language": "en,es-ES",
-	"explorer.confirmDragAndDrop": false
+	"explorer.confirmDragAndDrop": false,
+	"vsicons.dontShowNewVersionMessage": true,
+	"git.confirmSync": false
 }
