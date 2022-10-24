@@ -1,7 +1,7 @@
 {
 	"files.autoSave": "afterDelay",
 	"editor.fontSize": 16,
-	"editor.tabSize": 2,
+	"editor.tabSize": 4,
 	"editor.fontFamily": "'Cascadia Code PL', Menlo, Monaco",
 	"cSpell.language": "en,es-ES",
 	"cSpell.words": ["eleccion", "Eleccion", "opcion"]
