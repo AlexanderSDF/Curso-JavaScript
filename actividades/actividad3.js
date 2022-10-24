@@ -76,7 +76,7 @@
 // let admin = "alex";
 // let password = "41231";
 // let bandera = true;
-// 
+//
 // while (bandera) {
 // 	let userId = prompt("Ingrese nombre de usuario");
 // 	if (userId.toLowerCase() != admin) {
@@ -87,10 +87,10 @@
 // 	} else {
 // 		alert(`Bienvenido ${userId}`);
 // 	}
-// 
+//
 // 	let intentos = 3;
 // 	let userPw = prompt("Ingrese la contraseña");
-// 
+//
 // 	if (userPw != password) {
 // 		while ((intentos >= 1) & (userPw != password)) {
 // 			intentos = intentos - 1;

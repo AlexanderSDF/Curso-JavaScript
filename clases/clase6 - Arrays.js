@@ -63,124 +63,96 @@
 // //Mostrar mediante el parámetro que le pasemos
 // console.log(arrayString.join(" - "))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //class constructora
 class Libro {
-    constructor(id, autor, titulo, precio){
-        //propiedades o atributos de nuestra clase
-        this.id = id,
-        this.autor = autor,
-        this.titulo = titulo,
-        this.precio = precio
-
-    }
-    //métodos
-    mostrarData(){
-        console.log(`El titulo es ${this.titulo}, el autor es ${this.autor} y su precio es ${this.precio}`)
-    }
+	constructor(id, autor, titulo, precio) {
+		//propiedades o atributos de nuestra clase
+		(this.id = id), (this.autor = autor), (this.titulo = titulo), (this.precio = precio);
+	}
+	//métodos
+	mostrarData() {
+		console.log(
+			`El titulo es ${this.titulo}, el autor es ${this.autor} y su precio es ${this.precio}`
+		);
+	}
 }
 //Instanciación de objetos -- respetamos orden y cantidad de atributos
 
-const libro1 = new Libro(1,"Jorge Luis Borges","Aleph", 900)
+const libro1 = new Libro(1, "Jorge Luis Borges", "Aleph", 900);
 
-const libro2 = new Libro(2,"Gabriel García Marquez","Cien años de Soledad", 4500)
+const libro2 = new Libro(2, "Gabriel García Marquez", "Cien años de Soledad", 4500);
 
-const libro3 = new Libro(3,"Isabel Allende", "Paula", 2800)
+const libro3 = new Libro(3, "Isabel Allende", "Paula", 2800);
 
-const libro4 = new Libro(4,"Jorge Luis Borges","Ficciones", 1400)
+const libro4 = new Libro(4, "Jorge Luis Borges", "Ficciones", 1400);
 
-const libro5 = new Libro(5,"Mario Benedetti", "Andamios", 2200)
+const libro5 = new Libro(5, "Mario Benedetti", "Andamios", 2200);
 
-const libro6 = new Libro(6,"Mario Vargas Llosa", "La ciudad y los perros", 2000)
+const libro6 = new Libro(6, "Mario Vargas Llosa", "La ciudad y los perros", 2000);
 
 //Creamos nuestro array de objetos
 //cargar array
 //forma uno -- directa
-const estanteria = [libro1, libro2, libro3, libro4,libro5, libro6]
-console.log(estanteria)
+const estanteria = [libro1, libro2, libro3, libro4, libro5, libro6];
+console.log(estanteria);
 //forma dos // con push
-const biblioteca = []
-biblioteca.push(libro1, libro2, libro3, libro4,libro5, libro6)
-console.log(biblioteca)
+const biblioteca = [];
+biblioteca.push(libro1, libro2, libro3, libro4, libro5, libro6);
+console.log(biblioteca);
 
-//Función para agregar libros: 
-function nuevoLibro(array){
-    let autorIngresado = prompt("Ingrese el nombre del autor")
-    let tituloIngresado = prompt("Ingrese el título de la obra")
-    let precioIngresado = parseInt(prompt("Ingrese el precio del libro"))
-    let libroCreado = new Libro(array.length+1, autorIngresado, tituloIngresado, precioIngresado)
-    console.log(libroCreado)
-    //Objeto creado lo pusheo al array
-    array.push(libroCreado)
-    console.log(array)
+//Función para agregar libros:
+function nuevoLibro(array) {
+	let autorIngresado = prompt("Ingrese el nombre del autor");
+	let tituloIngresado = prompt("Ingrese el título de la obra");
+	let precioIngresado = parseInt(prompt("Ingrese el precio del libro"));
+	let libroCreado = new Libro(array.length + 1, autorIngresado, tituloIngresado, precioIngresado);
+	console.log(libroCreado);
+	//Objeto creado lo pusheo al array
+	array.push(libroCreado);
+	console.log(array);
 }
-
-
-
-
-
-
-
-
 
 //FUNCTIONS:
 
 //Function que consulte al usuario opción deseada
-function preguntarOpcion(){
-    let opcion = parseInt(prompt(`Ingrese el número de la opción que desea realizar:
+function preguntarOpcion() {
+	let opcion = parseInt(
+		prompt(`Ingrese el número de la opción que desea realizar:
                         1 - Ver catálogo de libros
                         2 - Agregar un libro a nuestro catálogo 
                         3 - Eliminar un libro de nuestro catálogo 
                         4 - Encontrar por titulo:
                         5 - Buscar libros de un mismo autor:
                         0 - Para salir
-                        `))
-    menu(opcion)
+                        `)
+	);
+	menu(opcion);
 }
 //Function que ofrezca un menú
-function menu(opcionSeleccionada){
-    switch(opcionSeleccionada){
-        case 0:
-            salir = true
-            alert(`Gracias por visitarnos, vuelva pronto :D`)
-        break    
-        case 1:
-        break 
-        case 2: 
-            nuevoLibro(estanteria)
-           
-      	break 
-   	    case 3: 
-            
-      	break
-        case 4: 
-            
-      	break
-        case 5: 
-            
-      	break 
-   	    default: 
-      	alert(`Ingrese una opción correcta`)
-    }
+function menu(opcionSeleccionada) {
+	switch (opcionSeleccionada) {
+		case 0:
+			salir = true;
+			alert(`Gracias por visitarnos, vuelva pronto :D`);
+			break;
+		case 1:
+			break;
+		case 2:
+			nuevoLibro(estanteria);
+
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		case 5:
+			break;
+		default:
+			alert(`Ingrese una opción correcta`);
+	}
 }
 //CÓDIGO:
-let salir = false
-while(salir!=true){
-    preguntarOpcion()
+let salir = false;
+while (salir != true) {
+	preguntarOpcion();
 }

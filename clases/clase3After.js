@@ -34,7 +34,7 @@
 // // let numTabla = parseInt(prompt("Ingrese el número del cual desea saber su tabla multiplicar"))
 // // // 5 x 0 = 0
 // // // 5 x 1 = 5
-// // // 5 x 2 = 10 
+// // // 5 x 2 = 10
 // // // ..
 // // // 5 x 10 = 50
 // // for(let i = 0; i <=10; i++ ){
@@ -44,7 +44,7 @@
 
 // // 5 x 0 = 0
 // // 5 x 1 = 5
-// // 5 x 2 = 10 
+// // 5 x 2 = 10
 // // ..
 // // 5 x 10 = 50
 // let numTabla = parseInt(prompt("Ingrese el número del cual desea saber su tabla multiplicar"))
@@ -132,7 +132,6 @@
 
 //Ejercicios clase 3:
 
-
 //Usuario ingresa tres notas del 1 al 10 y sacamos el total y el promedio de esas notas
 //Hacer un condicional que me diga si el promedio es 10 "felicitaciones es un alumno/a ejemplar"
 //Si el promedio es mayor a 7 " promociono la materia"
@@ -140,62 +139,66 @@
 //menor a 4 "desaprobó la materia"
 //Agregarle un ciclo que me pregunte si deseo seguir ingresando notas
 
-//Idea while: 
+//Idea while:
 //Idea do while:
-let bandera = true
-do{
-    //Los ingresos
-    let nombre = prompt("Ingrese el nombre de la persona")
-    //Decidir la cantidad a ingresar:
-    let notasIngresar = parseInt(prompt(`Ingrese la cantidad de notas correspondientes a ${nombre}`))
-    // if(isNaN(notasIngresar)){
-    // }else{
-    //     console.log("Si es tipo de dato number")
-    // }
-    
-    while(isNaN(notasIngresar)){
-        console.log("No es un número el tipo de dato")
-        notasIngresar = parseInt(prompt(`REVISE EL TIPO DE DATO INGRESADO: Ingrese la cantidad de notas correspondientes a ${nombre}`))
-    }
-    let total = 0
-    for(let i = 0; i < notasIngresar; i++){
-        let nota = parseFloat(prompt(`Ingrese la nota n° ${i+1}`))
-        // NaN = Not a Number
-        while(isNaN(nota)){
-            
-            nota = parseFloat(prompt(`Ingrese la nota n° ${i+1}`))
-        }
-        if(nota > 0 && nota<=10){
-            total = total + nota
-        }else{
-            alert("Ingrese una nota dentro del rango")
-            nota = parseFloat(prompt(`Ingrese la nota n° ${i+1}`))
-            total = total + nota
-        }
-        //equivalente
-        //total+=nota
-    }
+let bandera = true;
+do {
+	//Los ingresos
+	let nombre = prompt("Ingrese el nombre de la persona");
+	//Decidir la cantidad a ingresar:
+	let notasIngresar = parseInt(prompt(`Ingrese la cantidad de notas correspondientes a ${nombre}`));
+	// if(isNaN(notasIngresar)){
+	// }else{
+	//     console.log("Si es tipo de dato number")
+	// }
 
-    let promedio = total / notasIngresar
-    if(promedio == 10){
-        console.log(`${nombre}: Felicitaciones es un alumno/a ejemplar. Su promedio es ${promedio.toFixed(2)} `)
-    }else if(promedio > 7){
-        console.log(`${nombre}: Promociono la materia.  Su promedio es ${promedio.toFixed(2)} `)
-    }else if(promedio >= 4){
-        console.log(`${nombre}: Aprobó la materia.  Su promedio es ${promedio.toFixed(2)} `)
-    }else{
-        console.log(`${nombre}: Desaprobó la materia.  Su promedio es ${promedio.toFixed(2)} `)
-    }
-    let pregunta = prompt(`Desea ingresar las notas de otro/a alumno/a?
-    "ESC" para no`)
-    if(pregunta.toUpperCase() == "ESC"){
-        bandera = false
-        alert("Gracias por utilizar nuestro código!! ")
-    }
-}while(bandera)
+	while (isNaN(notasIngresar)) {
+		console.log("No es un número el tipo de dato");
+		notasIngresar = parseInt(
+			prompt(
+				`REVISE EL TIPO DE DATO INGRESADO: Ingrese la cantidad de notas correspondientes a ${nombre}`
+			)
+		);
+	}
+	let total = 0;
+	for (let i = 0; i < notasIngresar; i++) {
+		let nota = parseFloat(prompt(`Ingrese la nota n° ${i + 1}`));
+		// NaN = Not a Number
+		while (isNaN(nota)) {
+			nota = parseFloat(prompt(`Ingrese la nota n° ${i + 1}`));
+		}
+		if (nota > 0 && nota <= 10) {
+			total = total + nota;
+		} else {
+			alert("Ingrese una nota dentro del rango");
+			nota = parseFloat(prompt(`Ingrese la nota n° ${i + 1}`));
+			total = total + nota;
+		}
+		//equivalente
+		//total+=nota
+	}
+
+	let promedio = total / notasIngresar;
+	if (promedio == 10) {
+		console.log(
+			`${nombre}: Felicitaciones es un alumno/a ejemplar. Su promedio es ${promedio.toFixed(2)} `
+		);
+	} else if (promedio > 7) {
+		console.log(`${nombre}: Promociono la materia.  Su promedio es ${promedio.toFixed(2)} `);
+	} else if (promedio >= 4) {
+		console.log(`${nombre}: Aprobó la materia.  Su promedio es ${promedio.toFixed(2)} `);
+	} else {
+		console.log(`${nombre}: Desaprobó la materia.  Su promedio es ${promedio.toFixed(2)} `);
+	}
+	let pregunta = prompt(`Desea ingresar las notas de otro/a alumno/a?
+    "ESC" para no`);
+	if (pregunta.toUpperCase() == "ESC") {
+		bandera = false;
+		alert("Gracias por utilizar nuestro código!! ");
+	}
+} while (bandera);
 //Condicional que evalue el promedio
 //Lo del ciclo - que ingrese otro alumno
-
 
 // let bandera = true
 // do{
@@ -204,7 +207,7 @@ do{
 //     let nota1 = parseFloat(prompt("Ingrese la primer nota"))
 //     let nota2 = parseFloat(prompt("Ingrese la segunda nota"))
 //     let nota3 = parseFloat(prompt("Ingrese la tercer nota"))
-    
+
 //     let total = nota1+ nota2 + nota3
 //     let promedio = total / 3
 //     if(promedio == 10){
