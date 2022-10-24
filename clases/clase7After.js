@@ -1,5 +1,5 @@
 //CLASE N°7
-//Funciones de orden superior: funciones que pueden recibir otras functions como parámteros o retornar otras functions
+//Funciones de orden superior: funciones que pueden recibir otras functions como parámetros o retornar otras functions
 
 // //retornar functions:
 
@@ -47,7 +47,7 @@ class Libro {
 	//métodos
 	mostrarData() {
 		console.log(
-			`El titulo es ${this.titulo}, el autor es ${this.autor} y su precio es ${this.precio} MËTODO`
+			`El titulo es ${this.titulo}, el autor es ${this.autor} y su precio es ${this.precio} MÉTODO`
 		);
 	}
 }
@@ -106,7 +106,7 @@ function mostrarCatalogoFOREACH(array) {
 	array.forEach();
 }
 // mostrarCatalogoFOREACH(estanteria)
-// // console.log("SEPARACION")
+// // console.log("SEPARACIÓN")
 // // mostrarCatalogoFOREACH(biblioteca)
 
 //FUNCTION PARA APLICAR MÉTODO FIND
@@ -117,7 +117,7 @@ function buscarPorTitulo(array) {
 		(libro) => libro.titulo.toLowerCase() == tituloBuscado.toLowerCase()
 	);
 	if (tituloEncontrado == undefined) {
-		console.log(`El libro ${tituloBuscado} no se encuenta en catalogo`);
+		console.log(`El libro ${tituloBuscado} no se encuentra en catalogo`);
 	} else {
 		console.log(tituloEncontrado);
 	}
@@ -177,7 +177,7 @@ function ordenar(array) {
 		prompt(`
     1 - Ordenar de mayor a menor
     2 - Ordenar de menor a mayor
-    3 - Ordenar alfabeticamente por título`)
+    3 - Ordenar alfabéticamente por título`)
 	);
 	switch (opcion) {
 		case 1:
@@ -240,7 +240,6 @@ function menu(opcionSeleccionada) {
 			break;
 		case 2:
 			nuevoLibro(estanteria);
-
 			break;
 		case 3:
 			eliminarLibro(estanteria);
