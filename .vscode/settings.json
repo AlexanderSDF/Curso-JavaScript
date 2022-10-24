@@ -12,7 +12,8 @@
 		"funcion",
 		"Instanciación",
 		"nums",
-		"opcion"
+		"opcion",
+		"simulacion"
 	],
-	"cSpell.ignoreWords": ["ATENCIÖN", "Alfabeticamente", "METODO"]
+	"cSpell.ignoreWords": ["ATENCIÖN", "Alfabeticamente", "Asseto", "METODO", "categorias"]
 }

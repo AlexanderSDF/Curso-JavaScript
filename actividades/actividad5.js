@@ -62,19 +62,19 @@ Mercedes.presentar();
 Ferrari.presentar();
 
 //!Ejemplo del tutor
-class Escuderia1 {
-	constructor(
-		marca,
-		velPunta,
-		{ pilotos: piloto1, piloto2, piloto3 },
-		{ colores: color1, color2, color3 }
-	) {
-		return {
-			marca: marca,
-			velPunta: velPunta,
-			pilotos: { piloto1, piloto2, piloto3 },
-			colores: { color1, color2, color3 },
-		};
-	}
-}
-=]
+//class Escuderia1 {
+//	constructor(
+//		marca,
+//		velPunta,
+//		{ pilotos: piloto1, piloto2, piloto3 },
+//		{ colores: color1, color2, color3 }
+//	) {
+//		return {
+//			marca: marca,
+//			velPunta: velPunta,
+//			pilotos: { piloto1, piloto2, piloto3 },
+//			colores: { color1, color2, color3 },
+//		};
+//	}
+//}
+

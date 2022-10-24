@@ -22,17 +22,16 @@
 // console.log(arrayNumbers[3])
 // console.log(arrayString[4])
 
-// const numeros =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
-// console.log(numeros)
-// //for para recorrer un array
-// // for(let i = 0; i < 12; i++){
-// //     console.log(numeros[i])
-// // }
-// // //for equivalente, pero más optimo con el .length
-// // for(let index = 0; index < numeros.length; index++){
-// //     console.log("Con el length " + numeros[index])
-// // }
-
+//const numeros =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+//console.log(numeros)
+////for para recorrer un array
+//for(let i = 0; i < 12; i++){
+//    console.log(numeros[i])
+//}
+////for equivalente, pero más optimo con el .length
+//for(let index = 0; index < numeros.length; index++){
+//    console.log("Con el length " + numeros[index])
+//}
 // //MÉTODOS:
 
 // //Métodos para agregar elementos a un array
