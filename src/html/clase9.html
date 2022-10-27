@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--Bootstrap-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+		<!--CSS-->
+		<link rel="stylesheet" href="../css/estilos9.css" />
+		<title>Clase 9</title>
+	</head>
+	<body>
+		<h5>Tercera forma - Directo HTML</h5>
+		<button onclick="holaComi45025()">Evento con atributo HTML</button>
+		<br /><br />
+		<button ondblclick='alert("Nuestro primer evento")'>Evento directo desde HTML</button>
+		<!-- <div style="font-size: 30px; width: 150px;" 
+    onmouseover='alert("Perdiste")'>
+        No tocar
+    </div>   -->
+		<br /><br />
+		<h5>Segunda forma - Semantica</h5>
+		<input style="border: 1px solid black" type="text" id="nombreAlumno" />
+		<button id="evento-semantico">Evento con manejador semántico</button><br /><br />
+
+		<h5>Primera forma - Eventos múltiples</h5>
+		<button id="evento-multiple">Evento con manejador múltiple</button>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Mis Libros</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarColor01"
+					aria-controls="navbarColor01"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarColor01">
+					<ul class="navbar-nav me-auto">
+						<form class="d-flex">
+							<input
+								id="buscador"
+								class="form-control me-2"
+								placeholder="Encuentre su título"
+								aria-label="Search"
+							/>
+							<button id="btnBuscar" class="btn btn-outline-success">Buscar</button>
+						</form>
+					</ul>
+					<ul className="navbar-nav me-auto">
+						<li className="nav-item ">
+							<a
+								id="botonCarrito"
+								data-bs-toggle="modal"
+								data-bs-target="#idModal"
+								class="btn btn-secondary"
+								><i class="fas fa-shopping-cart fa-1x"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+				<div></div>
+			</div>
+		</nav>
+		<form>
+			<label for="titulo">Ingrese titulo:</label><br />
+			<input type="text" id="tituloInput" name="titulo" /><br />
+			<label for="autor">Ingrese autor:</label><br />
+			<input type="text" id="autorInput" name="autor" /><br />
+			<label for="precio">Ingrese precio:</label><br />
+			<input type="text" id="precioInput" name="precio" /><br />
+		</form>
+		<button id="guardarLibroBtn">Guardar libro</button>
+		<br /><br />
+
+		<br /><br />
+		<button id="verCatalogo">Ver Catálogo</button>
+		<br />
+		<button id="ocultarCatalogo">Ocultar Catálogo</button>
+		<br /><br /><br /><br /><br /><br /><br />
+		<div id="productos" class="estilosProductos"></div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="../../clases/clase9 - Eventos.js"></script>
+	</body>
+</html>
