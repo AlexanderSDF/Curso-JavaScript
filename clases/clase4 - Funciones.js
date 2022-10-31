@@ -14,6 +14,26 @@
 
 //!CLASE 4 FUNCTIONS
 
+//TODO: FUNCIONES CLÁSICAS - HOISTING(DECLARA Y LLAMA EN CUALQUIER ORDEN)
+function saludar(nombre){
+	return `Hola ${nombre}`;
+}
+console.log(saludar(Pedro));
+
+//TODO: FUNCIONES ANÓNIMAS - NO HOISTING(DECLARA después LLAMAR)
+let saludo2 = function(nombre){
+	return `Hola ${nombre}`
+}
+console.log(saludo2(Pedro));
+
+//TODO: FUNCIONES FLECHA - () => {} - PARÁMETRO DESPUÉS FUNCIÓN  (si es un solo parámetro no hace falta()y{})
+let saludo3 = nombre => `Hola ${nombre}`;
+console.log(saludo3(Pedro));
+
+let suma = (num1, num2) => {num1 + num2};
+console.log(suma(4,6));
+
+
 //!PRIMERA FORMA DE DECLARAR FUNCIONES
 //!Declaración la function
 function pedirNombre() {
