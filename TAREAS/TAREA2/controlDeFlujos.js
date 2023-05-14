@@ -22,60 +22,67 @@ if (idioma == `2`) {
 let colorFavorito = prompt(`ingrese el color favorito`);
 
 if (colorFavorito == `rojo`) {
-	console.log(`Genial mi color favorito tambien es rojo`);
+	console.log(`Genial mi color favorito también es rojo`);
 } else {
 	console.log(`Bueno el mio es el color rojo`);
 }
+*/
 
 //Condición Multiple
-
+/* 
 let insumo = prompt(`Seleccione el insumo que desea consultar: 
 \n1-Mouse Logitech G502 
 \n2-Teclado Razer Blackwidow v2 
 \n3-Monitor Samsung G7 Odyssey `);
 
 if (insumo == `1`) {
-	alert(`Mouse Logitech G502 garantia 6 meses $ 32.000,00`);
+	alert(`Mouse Logitech G502 garantía 6 meses $ 32.000,00`);
 } else if (insumo == `2`) {
-	alert(`Teclado Razer Blackwidow v2 garantia 6 meses $ 58.300,00`);
+	alert(`Teclado Razer Blackwidow v2 garantía 6 meses $ 58.300,00`);
 } else if (insumo == `3`) {
-	alert(`Monitor Samsung G7 Odyssey garantia 6 meses $ 140.000,00`);
+	alert(`Monitor Samsung G7 Odyssey garantía 6 meses $ 140.000,00`);
 } else {
 	alert(`Ingrese un numero valido`);
 }
-*/
+ */
+
 //variables booleanas
-let totalPedido = parseFloat(prompt(`Ingrese el total de pedido`));
-//funcion que calculará si el total de pedido es mayor a $ 3.500
-function calculoEnvioGratis() {
-	if (totalPedido > 3500) {
-		envioGratis = true;
-	} else {
-		envioGratis = false;
-	}
-}
-function calcularCostoEnvio() {
-	if (distancia == 1) {
-		let ubicacion = 1.05;
-	} else if (distancia == 2) {
-		let ubicacion = 1.15;
-	} else if (distancia == 3) {
-		let ubicacion = 1.3;
-	}
-}
+/*
+let totalDelPedido = parseFloat(prompt(`Ingrese el total en $ de su pedido`));
 
-let distancia = parseInt(
-	prompt(`Seleccione su ubicación:
-\n1-Capital Federal
-\n2-Provincia de Buenos Aires
-\n3-Otra Provincia`)
-);
 
-// si el total de pedido es mayor a $ 3.500,00 la compra contara con envió gratis
-calculoEnvioGratis(totalPedido);
+//Habrá envio sin cargo cuando el monto supere los 20000
+let envioSinCargo = totalDelPedido > 20000; 
+console.log(`El usuario tiene cargo ${envioSinCargo}`);
 
-if (envioGratis == true) {
-	alert(`Usted tiene un total de $ ${totalPedido} y tiene envió gratis`);
+/* if (totalDelPedido > 20000) {
+	envioSinCargo = true;
 } else {
-	alert(`Usted tiene un total de $ ${totalPedido} y su envio tiene un costo de $ ${costoEnvio}`);
+	envioSinCargo = false;
+}
+ */
+
+// Operador AND &&
+// ambas condiciones deben ser verdaderas
+let equipoFutbol = prompt(`en que equipo de futbol jugo mas tiempo Cristiano Ronaldo?`);
+let numeroCamisetaCR7 = prompt(`que numero de camiseta usa Cristiano Ronaldo?`);
+
+if (equipoFutbol == `Real Madrid` && numeroCamisetaCR7 == `7`) {
+	alert(`ganaste una camiseta autografiada por Cristiano Ronaldo!!`);
+} else {
+	alert(`una o mas respuestas no son correctas.`);
+}
+
+// Operador OR ||
+// al menos una de las condiciones deben ser verdaderas
+
+let banda = prompt(
+	`que banda Pop en 2022 realizo 10 recitales en el estadio Monumental?`
+);
+if (banda == `Coldplay` || banda == `coldplay` || banda == `COLDPLAY`) {
+	alert(`Excelente acertaste`);
+}
+
+if (banda == ``) {
+	alert(`No ingresaste ninguna valor`);
 }
