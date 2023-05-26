@@ -121,7 +121,7 @@ class Tarea{
         this.realizada = false;
     }
     //metodo para marcar actividad realizada
-    completarActividad(){
+    completarTarea(){
         this.realizada = true;
     }
 }
@@ -132,3 +132,8 @@ const listaTareas=[];
 for(const tarea of tareas){
     listaTareas.push(new Tarea(tarea));
 }
+console.log(listaTareas);
+
+//marco tareas como completadas
+listaTareas[3].completarTarea();
+console.log(listaTareas);

@@ -1,3 +1,34 @@
+//OBJETOS
+//1 Literales
+
+//const para declarar un objeto
+
+const notebookGamer = {
+    id: 1,
+    marca: "Lenovo",
+    modelo: "Legion 5",
+    version: "1.0",
+    color: "Plateado",
+    puertos: 5,
+    tipoPuerto:"Usb",
+    precio: 1450,
+    stock: 5,
+}
+//llamando al objeto
+console.log(notebookGamer);
+console.log(notebookGamer.marca);
+//modificar una propiedad del objeto
+notebookGamer.color = "Azul Marino";
+//agregar una propiedad al objeto
+notebookGamer.garantia = "12 meses"
+//eliminando una propiedad del objeto
+delete notebookGamer.version;
+console.log(notebookGamer);
+//mostrar mas de una propiedad del objeto
+console.log(notebookGamer.marca+ ` `+ notebookGamer.precio+` Usd.`);
+console.log(notebookGamer.id,notebookGamer.marca,notebookGamer.precio);
+
+
 //CREANDO CONSTRUCTOR DE OBJETO Y USÁNDOLO
 function Alumno(nombre, apellido, legajo, curso) {
     this.nombre = nombre;

@@ -36,7 +36,7 @@ console.log(hub);
 
 
 
-//funcion constructora
+//función constructora
 function Alumno(nombre, apellido, legajo, curso){
     //propiedades
     this.nombre = nombre;
