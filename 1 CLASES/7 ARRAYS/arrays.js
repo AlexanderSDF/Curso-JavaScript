@@ -123,7 +123,7 @@ for(const tarea of tareas){
 
 console.log(listaTareas);
 
-//marco la tarea en la posicion 2 de la nueva lista como realizada!
+//marco la tarea en la posición 2 de la nueva lista como realizada!
 listaTareas[2].completarTarea();
 console.log(listaTareas);
 

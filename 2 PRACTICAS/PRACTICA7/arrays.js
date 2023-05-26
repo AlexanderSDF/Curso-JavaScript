@@ -17,7 +17,7 @@ for (let i=0; i<listaCompras.length; i++){
 
 //MÉTODOS DE ARRAYS
 //push() - Agrega un elemento al final de la lista
-//let nuevoElemento = prompt("Ingrese un nuevo elemento a la lista de compras: ");
+//let nuevoElemento = prompt("Ingrese un nuevo elemento a la lista de tareas: ");
 listaCompras.push("Chocolate");
 console.log(listaCompras);
 
@@ -45,3 +45,90 @@ const perros = ["Thor", "Spike"];
 const gatos = ["Nebula", "Ares"];
 const mascotas = perros.concat(gatos);
 console.log(mascotas);
+
+//slice() - Del array.slice(0,5) toma desde-hasta el elemento indicado y vuelca los datos en una nueva variable
+
+const nombres = ["Juan", "Pedro","Marcelo", "Maria", "Ana", "Diana"];
+const nombresMasculinos = nombres.slice(0,3);
+console.log(nombresMasculinos);
+
+/*
+//indexOf() - Busca en el array y devuelve la posición de un elemento
+let aBuscar = prompt("Ingrese un alumno a buscar: ");
+//console.log(nombres.indexOf(aBuscar));
+
+if (nombres.indexOf(aBuscar) === -1){
+    alert(aBuscar+ " el elemento no se encuentra inscrpito aun");
+    let respuesta = prompt("Desea inscribirlo? \ns-Si\n n-No");
+    if (respuesta.toLocaleLowerCase() == "s"){
+        nombres.push(aBuscar);
+        console.log(nombres);
+    }
+}else{
+    alert(aBuscar+ " ya se encuentra inscrpito.");
+}
+*/
+
+//includes() - Verifica si un elemento esta o no en el array => True o false
+console.log(nombres)
+console.log(nombres.includes("Juan"))
+console.log(nombres.includes("Juanita"))
+console.log(nombres.includes("Diana"))
+
+//reverse() - Devuelve el array en orden invertido
+console.log(nombres.reverse())
+
+//ARRAYS EN OBJETOS
+//actividades va ser un array de objetos
+const tareas = [
+    {
+        id: 1,
+        nombre: "Estudiar"
+    },
+    {
+        id:2,
+        nombre: "Trabajar"
+    },
+    {
+        id:3,
+        nombre: "Hacer actividad física"
+    },
+    {
+        id:4,
+        nombre: "Comprar insumos"
+    },
+    {
+        id:5,
+        nombre: "Momento de ocio"
+    },
+    {
+        id:6,
+        nombre: "Descansar"
+    }
+];
+console.log(tareas);
+console.log(tareas[1]);
+
+for (const tarea of tareas){
+    console.log(tarea.id+" - "+tarea.nombre);
+}
+
+//class tarea para convertir objeto literal en objetos de la class tarea
+class Tarea{
+    constructor(objetoLiteralTarea){
+        this.id = objetoLiteralTarea.id;
+        this.nombre = objetoLiteralTarea.nombre;
+        this.realizada = false;
+    }
+    //metodo para marcar actividad realizada
+    completarActividad(){
+        this.realizada = true;
+    }
+}
+//nueva lista vacía y se carga con los objetos de la class tarea
+//estos objetos tendrán las mismas propiedades que las literales pero"Realizada"
+const listaTareas=[];
+//uso un for..of para hacer la conversion
+for(const tarea of tareas){
+    listaTareas.push(new Tarea(tarea));
+}
